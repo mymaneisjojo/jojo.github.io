@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <section>
+        <div class="circle"></div>
+          <header>
+              <a href="#" ><img src="images/logo.png" class="logo" alt=""></a>
+              <ul>
+                  <li><a href="" class="nav">Home</a></li>
+                  <li><a href="" class="nav">Menu</a></li>
+                  <li><a href="" class="nav">What's new</a></li>
+                  <li><a href="" class="nav">Contact</a></li>
+              </ul>
+          </header>
+          <div class="content">
+              <div class="textBox">
+                  <h2>It not just Coffee<br><span> Is Starbuck</span></h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quae recusandae atque voluptatibus est impedit dolorum voluptatum itaque modi! Quaerat culpa necessitatibus velit id quas veniam rerum, accusamus quidem nemo.</p>
+                  <a href="#">Learn more</a>
+              </div>
+              <div class="imgBox">
+                <img src="images/img1.png" class="starbuck" alt="">
+                
+            </div>
+          </div>
+          <ul class="thumb">
+              <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeColorCircle('#017143')" alt=""></li>
+              <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeColorCircle('#eb7495')" alt=""></li>
+              <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeColorCircle('#d752b1')" alt=""></li>
+          </ul>
+          <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+          </ul>
+      </section>
+    <script>
+      function imgSlider(anything){
+        document.querySelector('.starbuck').src = anything;
+      }
+      function changeColorCircle(color){
+        
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+      }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
